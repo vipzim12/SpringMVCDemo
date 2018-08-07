@@ -4,20 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<table>
-		<tr>
-			<td>Welcome ${firstname}</td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<td><a href="home.jsp">Home</a></td>
-		</tr>
-	</table>
+<head>
+<body>
+	<h2>OK</h2>
+	<%-- <div class="container">
+		<h3 id="output_header" class="text-success"><%=request.getAttribute("output")%></h3>
+	</div> --%>
 </body>
+</body>
+
 </html>

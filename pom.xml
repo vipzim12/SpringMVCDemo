@@ -3,19 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>saunv</groupId>
-	<artifactId>SpringMVCDemo</artifactId>
+	<artifactId>SpringMVCLogin</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringMVCDemo Maven Webapp</name>
+	<name>SpringMVCLogin Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.0.8.RELEASE</spring.version>
-		<junit.version>4.12</junit.version>
-		<servlet.version>3.1.0</servlet.version>
-		<servlet.version>3.0.1</servlet.version>
-		<mysql.connector.version>5.1.9</mysql.connector.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -23,28 +15,29 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
+			<version>5.0.8.RELEASE</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>${servlet.version}</version>
+			<version>4.0.1</version>
+			<scope>provided</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.version}</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
+
+
 	</dependencies>
 	<build>
-		<finalName>SpringMVCDemo</finalName>
+		<finalName>SpringMVCLogin</finalName>
 	</build>
 </project>
